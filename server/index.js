@@ -89,7 +89,7 @@ instance.waitUntilValid(() => {
   console.log('package is valid');
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const server = (module.exports = {});
 
 
