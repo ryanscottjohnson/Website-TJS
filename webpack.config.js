@@ -2,7 +2,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'development',
-  entry: './client/src/main.jsx',
+  entry: './src/index.js',
   devServer: {
     historyApiFallback: true
   },

@@ -16,13 +16,13 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Header />
-          <Switch>
+          {/* <Header /> */}
+          {/* <Switch> */}
             {/* home route */}
-            <Route path="/" exact render={() => <Home {...this.state} />} />
+            {/* <Route path="/" exact render={() => <Home {...this.state} />} /> */}
 
-          </Switch>
-          <Footer />
+          {/* </Switch> */}
+          {/* <Footer /> */}
         </div>
       </Router>
     )
