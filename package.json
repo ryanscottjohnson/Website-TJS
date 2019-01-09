@@ -2,7 +2,7 @@
   "name": "website-tjs",
   "version": "1.0.0",
   "description": "Teressa Johnson Studio",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "node index.js",
     "build": "webpack --mode production",
