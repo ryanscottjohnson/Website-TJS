@@ -8,7 +8,7 @@ const config = {
   },
   output: {
     path: `${__dirname}/client/dist`,
-    filename: 'bundle-[hash].js'
+    filename: 'bundle.js'
   },
   devtool: 'source-map',
   plugins: [new HtmlPlugin({template: __dirname + '/index.html'})],
