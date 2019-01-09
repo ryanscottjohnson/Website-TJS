@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link, Swithc } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {Home} from "./components/Home";
 
 
 class App extends Component {
@@ -16,13 +19,13 @@ class App extends Component {
     return (
       <Router>
         <div>
-          {/* <Header /> */}
+          <Header />
           {/* <Switch> */}
             {/* home route */}
-            {/* <Route path="/" exact render={() => <Home {...this.state} />} /> */}
+            <Route path="/" exact render={() => <Home {...this.state} />} />
 
           {/* </Switch> */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     )
