@@ -17,7 +17,7 @@ class Header extends Component {
             <Link to="/">
               <div className="logo-container">
                 <div className="image-container">
-                  {/* <img src="../public/logo/logo.svg" alt="TJS LOGO"/> */}
+                  <img src="../public/logo/tjs-logo.png" alt="TJS LOGO"/>
                 </div>
               </div>
             </Link>
