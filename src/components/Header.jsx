@@ -21,7 +21,7 @@ class Header extends Component {
                 </div>
               </div>
             </Link>
-            <h2>Hello There Teressa</h2>
+            <h2>Header</h2>
           </div>
           <Nav device={this.props.device} handleNavClick={this.props.handleNavClick} {...this.props} />
         </header>
