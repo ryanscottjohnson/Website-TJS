@@ -43,7 +43,7 @@ export class Home extends Component {
   // }
   render() {
     return (
-      <h2>from home</h2>
+      <h2>How are you today?</h2>
     //   <div className="home">
     //     {this.renderCarousel()}
     //     <div className="content">

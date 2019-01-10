@@ -10,7 +10,7 @@ class Footer extends Component {
   render() {
     return (
       <footer id="colophon" className="site-footer">
-      <h2>from footer</h2>
+      <h2>Happy almost Birthday to you.</h2>
         {/* <div className="footer footer-text-color-white">
           <div className="footer-inner">
             <div className="content">
