@@ -46,6 +46,7 @@ export class Home extends Component {
   render() {
     
     return (
+
       <div className="content">
         <header className={`home ${this.props.device}`}>
           <div className="image">
@@ -65,7 +66,6 @@ export class Home extends Component {
 
   // render() {
   //   return (
-  //     <h2>from home</h2>
     //   <div className="home">
     //     {this.renderCarousel()}
     //     <div className="content">
