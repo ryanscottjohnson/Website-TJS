@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+// import Nav from "./Nav";
 // import Carousel from "nuka-carousel";
 // import ProductTile from "./ProductTile";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -41,9 +42,30 @@ export class Home extends Component {
   //       return <img key={index} src={x.image} />;
   //     });
   // }
+
   render() {
+    
     return (
-      <h2>How are you today?</h2>
+
+      <div className="content">
+        <header className={`home ${this.props.device}`}>
+          <div className="image">
+            {/* <Link to="/"> */}
+              <div className="image-container">
+                <img src="../public/images/main.jpg" alt="Home Image"/>
+              </div>
+            {/* </Link> */}
+          </div>
+          {/* <Nav device={this.props.device} handleNavClick={this.props.handleNavClick} {...this.props} /> */}
+        </header>
+      </div>
+    );
+  }
+
+
+
+  // render() {
+  //   return (
     //   <div className="home">
     //     {this.renderCarousel()}
     //     <div className="content">
@@ -95,8 +117,8 @@ export class Home extends Component {
     //       </div>
     //     </section>
     //   </div>
-    );
-  }
+  //   );
+  // }
 }
 
 export default Home;

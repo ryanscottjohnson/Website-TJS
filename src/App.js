@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Link, Swithc } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import {Home} from "./components/Home";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import {Home} from "./components/Home.jsx";
 
 
 class App extends Component {
@@ -18,15 +18,17 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <Fragment>
         <div>
           <Header />
-          {/* <Switch> */}
+          
             {/* home route */}
             <Route path="/" exact render={() => <Home {...this.state} />} />
 
-          {/* </Switch> */}
+         
           <Footer />
         </div>
+        </Fragment>
       </Router>
     )
   }
