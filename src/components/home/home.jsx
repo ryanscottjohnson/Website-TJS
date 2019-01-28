@@ -33,9 +33,9 @@ class HomePage extends React.Component {
 
         <section id="hero-block">
           <div className="cta-block">
-            <h1>Gree</h1>
+            <h1>Greeting</h1>
             <p>Content</p>
-            <button onClick={this.runMailPopup} className="cta-btn">Connect</button>
+            {/* <button onClick={this.runMailPopup} className="cta-btn">Connect</button> */}
           </div>
         </section>
 
