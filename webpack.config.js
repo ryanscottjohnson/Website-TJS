@@ -2,16 +2,15 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'development',
-  entry: './src/index.js',
-  devServer: {
-    historyApiFallback: true
-  },
+  devtool: 'source-map',
+  entry: `${__dirname}/src/main.jsx`,
   output: {
-    path: `${__dirname}/client/dist`,
+    path: `${__dirname}/docs`,
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
-  plugins: [new HtmlPlugin({template: __dirname + '/index.html'})],
+  plugins: [
+    new HtmlPlugin({ template: __dirname + '/src/index.html' })
+  ],
   module: {
     rules: [
       {
@@ -23,30 +22,20 @@ const config = {
         }
       },
       {
-        test: /\.(scss|css|less)$/,
-
-        loader: [
-        "style-loader",
-        "css-loader",
-        "sass-loader",
-        "postcss-loader"
-      ]},
-      { 
-        test: /\.(png|jpg|gif)$/, 
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-              useRelativePath: true
-            }  
-          }
-        ]
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/'
+          }
+        }],
+      }
     ]
-  },
-  resolve: {
-      extensions: [".js", ".jsx", ".json"]
   }
 }
 
