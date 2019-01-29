@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Muli|Ovo');
 
-$p-font: 'Muli', sans-serif;
-$h-font: 'Ovo', serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+// $p-font: 'Muli', sans-serif;
+// $h-font: 'Ovo', serif;
+
+$p-font: 'Open Sans Condensed', sans-serif;
+$h-font: 'Open Sans Condensed', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
+  // font-family: 'Open Sans Condensed', sans-serif;
   font-family: $h-font;
 }
 
 p {
+  // font-family: 'Open Sans Condensed', sans-serif;
   font-family: $p-font;
 }
