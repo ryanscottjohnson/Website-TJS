@@ -39,7 +39,6 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-
         <section id="home-how-it-works">
           <h1>Title</h1>
           <ul>
