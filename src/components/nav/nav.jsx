@@ -13,15 +13,15 @@ class Nav extends Component {
     // this.props.mobileNav === false ? (menuStatus = "hide", menuText = "menu") : (menuStatus = "show", menuText = "close");
     return (
       <div className="nav-container">
-        {/* <div className={`menu-link ${menuStatus}`} onClick={(e) => this.props.handleNavClick(e)}>
+        <div className={`menu-link ${menuStatus}`} onClick={(e) => this.props.handleNavClick(e)}>
           {menuText}
-        </div> */}
+        </div>
         <nav className={this.props.device}>
           <div className={`menu-container ${menuStatus}`}>
-            {/* <NavLink onClick={this.props.hideNav} to={{pathname : "/residential"}} activeClassName="active">residential</NavLink> */}
-            {/* <NavLink onClick={this.props.hideNav} to="/commercial" activeClassName="active">commercial</NavLink> */}
-            {/* <NavLink onClick={this.props.hideNav} to="/mobile-homes" activeClassName="active">mobile homes</NavLink> */}
-            {/* <NavLink onClick={this.props.hideNav} to="/bid-request" activeClassName="active">bid-request</NavLink> */}
+            <NavLink onClick={this.props.hideNav} to={{pathname : "/subscriptions"}} activeClassName="active">Subscriptions</NavLink>
+            {/* <NavLink onClick={this.props.hideNav} to="/press" activeClassName="active">Press</NavLink> */}
+            {/* <NavLink onClick={this.props.hideNav} to="/sercives" activeClassName="active">Services</NavLink> */}
+            {/* <NavLink onClick={this.props.hideNav} to="/about" activeClassName="active">About</NavLink> */}
           </div>
         </nav>
       </div>
