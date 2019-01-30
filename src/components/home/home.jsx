@@ -35,11 +35,11 @@ class HomePage extends React.Component {
           <div className="cta-block">
             <h1>Greeting</h1>
             <p>Content</p>
-            {/* <button onClick={this.runMailPopup} className="cta-btn">Connect</button> */}
           </div>
         </section>
 
         <section id="home-how-it-works">
+            {/* <button onClick={this.runMailPopup} className="cta-btn">Connect</button> */}
           <h1>Title</h1>
           <ul>
             <li>Content</li>
