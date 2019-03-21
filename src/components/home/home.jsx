@@ -39,7 +39,7 @@ class HomePage extends React.Component {
         </section>
 
         <section id="home-how-it-works">
-            {/* <button onClick={this.runMailPopup} className="cta-btn">Connect</button> */}
+            <button onClick={this.runMailPopup} className="cta-btn">Connect</button>
           <h1>Title</h1>
           <ul>
             <li>Content</li>
@@ -47,7 +47,7 @@ class HomePage extends React.Component {
           </ul>
         </section>
 
-      </React.Fragment>
+    </React.Fragment>
   }
 }
 
