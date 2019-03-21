@@ -13,20 +13,6 @@ class HomePage extends React.Component {
     // this.runMailPopup = this.runMailPopup.bind(this);
   }
 
-  componentDidMount() {
-    // Code for running Mailerlite
-    // (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-    //   var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-    //   f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-    //   var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-    //   _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-      
-    //   ml_account = ml('accounts', '1308892', 't0g9u5n8v8', 'load');
-  }
-
-  // runMailPopup() {
-  //   ml_account('webforms', '1094822', 'b7x6u1', 'show');
-  // }
 
   render() {
     return <React.Fragment>
@@ -38,14 +24,14 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <section id="home-how-it-works">
+        {/* <section id="home-how-it-works">
             <button onClick={this.runMailPopup} className="cta-btn">Connect</button>
           <h1>Title</h1>
           <ul>
             <li>Content</li>
 
           </ul>
-        </section>
+        </section> */}
 
     </React.Fragment>
   }
