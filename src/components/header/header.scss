@@ -1,23 +1,21 @@
-$white-overlay: #ffffffd8;
-
-.header-nav {
-  position: fixed;
-  top: 0;
+.header {
+  background-color: grey;
+  position: absolute;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  padding: 3%;
   width: 100%;
 
     #logo {
       align-self: center;
       width: 100px;
       margin: 0 auto;
-      padding: 5px;
+      padding: 2px;
     }
 }
 
 @media only screen and (min-width: 700px) {
-  .header-nav {
-    background-color: $white-overlay;
+  .header {
+    padding: 2%;
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-import Nav from "../nav/nav.jsx";
+// import Nav from "../nav/nav.jsx";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './header.scss';
@@ -23,7 +23,7 @@ class Header extends React.Component {
               </nav>
             </Link>
           </div>
-          <Nav device={this.props.device} handleNavClick={this.props.handleNavClick} {...this.props} />
+          {/* <Nav device={this.props.device} handleNavClick={this.props.handleNavClick} {...this.props} /> */}
         </header>
       </div>
     );

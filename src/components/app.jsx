@@ -9,10 +9,7 @@ import Footer from './footer/footer.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-
   }
-
-
 
   render() {
     let menuStatus = null;
@@ -20,20 +17,10 @@ class App extends React.Component {
       <Router>
         <div className={`tjs-wrapper ${menuStatus}`}>
           <Header />
-          <Switch>
-            <Route path="/" exact render={() => <Home {...this.state} />} />
-            <Route path="subscriptions" />
-            <Route path="press" />
-            <Route path="services" />
-            <Route path="projects" />
-            <Route path="about" />
-            <Route path="contact" />
-
-          </Switch>
+          <Home />
           <Footer />
         </div>
       </Router>
-
     );
   }
 }
