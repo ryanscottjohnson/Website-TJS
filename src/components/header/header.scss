@@ -1,23 +1,24 @@
 header {
-  position: fixed;
+  position: relative;
   top: 0;
+  background-color: grey;
   display: flex;
   flex-direction: row;
-  justify-content: center center;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  background-color: grey;
+  padding: 3% 0 3% 0;
   z-index: 99;
   
-  #logo {
-    position: relative;
-    align-items: center;
+  .header-logo {
+    align-self: center;
     width: 5em;
-    padding: 2em;
+    margin: 0 auto;
+    padding: 2px;
   }
   
-  @media only screen and (min-width: 700px) {
-    padding: 5px 10%;
-    flex-direction: row;
-  }
+  // @media only screen and (min-width: 700px) {
+  //   padding: 5px 10%;
+  //   flex-direction: row;
+  // }
 }

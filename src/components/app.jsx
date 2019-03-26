@@ -1,9 +1,8 @@
 require('dotenv').config();
 
-
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './home/home.jsx';
 import Header from './header/header.jsx';

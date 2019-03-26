@@ -18,6 +18,7 @@ class HomePage extends React.Component {
 
       <section id="hero-block">
         <div className="hero">
+        <p>Hello World!</p>
         
         </div>
  

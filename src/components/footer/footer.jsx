@@ -2,7 +2,7 @@ import React from 'react';
 
 import './footer.scss';
 
-import logo from '../../images/tjs-logo.png'
+import logo from '../../images/tjs-logo.png';
 
 class Footer extends React.Component {
 
