@@ -2,13 +2,13 @@ import React from 'react';
 
 import './footer.scss';
 
-import logo from '../../images/tjs-logo.png'
+import logo from '../../images/tjs-logo.png';
 
 class Footer extends React.Component {
 
   render() {
     return <footer>
-      <img class="footer-logo" src={logo} />
+      <img className="footer-logo" src={logo} />
     </footer>
   }
 }

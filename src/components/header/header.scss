@@ -1,23 +1,24 @@
-$white-overlay: #ffffffd8;
-
-.header-nav {
-  position: fixed;
+header {
+  position: relative;
   top: 0;
+  background-color: grey;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
-
-    #logo {
-      align-self: center;
-      width: 100px;
-      margin: 0 auto;
-      padding: 5px;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-  .header-nav {
-    background-color: $white-overlay;
+  padding: 3% 0 3% 0;
+  z-index: 99;
+  
+  .header-logo {
+    align-self: center;
+    width: 5em;
+    margin: 0 auto;
+    padding: 2px;
   }
+  
+  // @media only screen and (min-width: 700px) {
+  //   padding: 5px 10%;
+  //   flex-direction: row;
+  // }
 }
