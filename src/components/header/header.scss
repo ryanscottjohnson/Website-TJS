@@ -1,17 +1,23 @@
 .header {
-  background-color: grey;
-  position: absolute;
+  position: fixed;
+  top: 0;
   display: flex;
-  justify-content: center;
-  padding: 3%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
+  padding: 3%;
+  align-items: center;
+  background-color: grey;
+  // background-color: #ffffff;
+  z-index: 99;
 
-    #logo {
-      align-self: center;
-      width: 100px;
-      margin: 0 auto;
-      padding: 2px;
-    }
+  #logo {
+    align-self: center;
+    width: 5em;
+    margin: 0 auto;
+    padding: 2px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
