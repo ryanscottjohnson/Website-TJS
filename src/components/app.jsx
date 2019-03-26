@@ -1,6 +1,9 @@
+require('dotenv').config();
+
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Home from './home/home.jsx';
 import Header from './header/header.jsx';
@@ -12,16 +15,14 @@ class App extends React.Component {
   }
 
   render() {
-    let menuStatus = null;
     return (
-      <Router>
-        <div className={`tjs-wrapper ${menuStatus}`}>
-          <Header />
-          <Home />
-          <Footer />
-        </div>
-      </Router>
-    );
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          {/* <Route path='/about' component={About} /> */}
+        </Switch>
+      </BrowserRouter>
+    )
   }
 }
 
